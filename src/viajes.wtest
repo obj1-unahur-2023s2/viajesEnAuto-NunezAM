@@ -1,0 +1,29 @@
+import clientes.*
+import remiseras.*
+
+
+test "test de Roxana llevando a ludmila en un viaje de 10 kilometros" {
+	
+	assert.equals(180, roxana.precioViaje(ludmila, 10))
+
+}
+
+test "test de Mariela llevando a Ana Maria en un viaje de 2 kilometros" {
+	
+	assert.equals(60, mariela.precioViaje(anaMaria,2))
+}
+
+test "test de Gabriela llevando a Teresa en un viaje de 2 kilometros" {
+	
+	assert.equals(52.80, gabriela.precioViaje(teresa, 2))
+}
+
+test "test de Juana llevando a teresa en un viaje de 10 kilometros" {
+	
+	assert.equals(200, juana.precioViaje(teresa, 10))
+}
+
+test "test de Juana llevando a Ana Maria en un viaje de 2 kilometros" {
+	
+	assert.equals(100, juana.precioViaje(anaMaria, 2))
+}
