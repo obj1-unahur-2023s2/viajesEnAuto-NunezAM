@@ -1,0 +1,18 @@
+import oficina.*
+import remiseras.*
+import clientes.*
+
+test "La primera remisera es Roxana y la segunda Juana. Para un viaje de 10 kilómetros a Ana María elije a Juana" {
+	oficina.asignarRemiseras(roxana, juana)
+	assert.equals(juana, oficina.remiseraElegidaParaViaje(anaMaria, 10))
+}
+
+test "Mismas remiseras. Para un viaje de 10 kilómetros a Teresa elije a Roxana" {
+	oficina.asignarRemiseras(roxana, juana)
+	assert.equals(roxana, oficina.remiseraElegidaParaViaje(teresa, 10))
+}
+
+test "Mismas remiseras. Para un viaje de 4 kilómetros a Teresa elije a Roxana" {
+	oficina.asignarRemiseras(roxana, juana)
+	assert.equals(roxana, oficina.remiseraElegidaParaViaje(teresa, 4))
+}

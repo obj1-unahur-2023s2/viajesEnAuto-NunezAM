@@ -27,3 +27,23 @@ test "test de Juana llevando a Ana Maria en un viaje de 2 kilometros" {
 	
 	assert.equals(100, juana.precioViaje(anaMaria, 2))
 }
+
+test "Lucia reemplaza a Mariela y Melina trabaja para Ludmila. Lucia le cobra a Melina 150 por un viaje de 10 kms y 50 por uno de 1 km" {
+	lucia.reemplazarA(mariela)
+	melina.empleadora(ludmila)
+	
+	assert.equals(150, lucia.precioViaje(melina, 10))
+	assert.equals(50, lucia.precioViaje(melina, 1))
+	
+}
+
+test "Lucia reemplaza a Gabriela y Melina trabaja para Ludmila. Lucia le cobra a Melina 180 por un viaje de 10 kms  y 18 por 1 km" {
+	lucia.reemplazarA(gabriela)
+	melina.empleadora(ludmila)
+	
+	assert.equals(180, lucia.precioViaje(melina, 10))
+	assert.equals(18, lucia.precioViaje(melina, 1))
+}
+
+
+

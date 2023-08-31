@@ -45,6 +45,8 @@ object melina {
 	method empleadora(cliente) {
 		empleadora = cliente
 	}
+	
+	
 }
 
 
